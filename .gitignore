@@ -133,3 +133,6 @@ cython_debug/
 
 # JetBrains IDEs
 .idea/
+
+#Photos
+photos
