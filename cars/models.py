@@ -70,6 +70,11 @@ class Car(models.Model):
         ('WY', 'Wyoming'),
     )
 
+    transmission_choices = [
+        ('Manual', 'Manual'),
+        ('Automatic', 'Automatic'),
+    ]
+
     year_choice = []
     for year_opt in range(2000, datetime.now().year+1):
         year_choice.append((year_opt,year_opt))
@@ -117,7 +122,7 @@ class Car(models.Model):
     features = models.ManyToManyField(Feature)
     body_style = models.CharField(max_length=100)
     engine = models.CharField(max_length=100)
-    transmission = models.CharField(max_length=100)
+    transmission = models.CharField(choices=transmission_choices,max_length=100)
     interior = models.CharField(max_length=100)
     miles = models.IntegerField()
     doors = models.CharField(choices=door_choices, max_length=10)

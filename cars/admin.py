@@ -12,7 +12,7 @@ class CarAdmin(admin.ModelAdmin):
     list_display_links = ('id','thumbnail','car_title')
     search_fields = ('car_title','year', 'model')
     list_editable = ('is_featured',)
-    list_filter = ('fuel_type',)
+    list_filter = ('fuel_type','transmission',)
 
 admin.site.register(Car, CarAdmin)
 admin.site.register(Feature)
