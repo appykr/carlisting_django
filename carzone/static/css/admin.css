@@ -1,0 +1,53 @@
+#header{
+background-color: white;
+color: #ff0000 !important;
+box-shadow: 0px 0px 6px 0px #ff0000;
+}
+
+#header a:link, #header a:visited{
+    color: black;
+}
+
+div.breadcrumbs{
+    background-color: black;
+    color: white;
+}
+
+#changelist-filter h2 {
+    background-color: black;
+}
+
+input[type=submit].default, .submit-row input.default {
+    background-color: #4e5557;
+}
+#user-tools a, #logout-form button{
+    color: #4e5557;
+}
+#nav-sidebar .module caption{
+    background-color: black;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background-color: black;
+}
+
+a:link, a:visited {
+    color: #4e5557;
+}
+
+#nav-sidebar .current-app .section:link{
+    color: white;
+}
+
+#nav-sidebar .current-model{
+    background-color: #ecd0d0;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+    background-color: #4e5557;
+}
+
+.button, input[type=submit], input[type=button], .submit-row input, a.button :hover{
+    
+    color: white;
+}
