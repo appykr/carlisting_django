@@ -479,3 +479,20 @@ $(function () {
         }
     }).trigger("resize");
 })(jQuery);
+
+// setTimeout(function(){
+//     $('#message').fadeOut('slow');
+// }, 4000)
+
+setTimeout(function() {
+    var message = document.getElementById('message');
+    if (message) {
+        message.style.transition = 'opacity 1s'; // 1 second fade-out duration
+        message.style.opacity = '0'; // Start fading out
+
+        // Optionally, remove the element from the DOM after the fade-out completes
+        message.addEventListener('transitionend', function() {
+            message.style.display = 'none';
+        });
+    }
+}, 4000); // Wait for 4 seconds before starting the fade-out
