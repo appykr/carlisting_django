@@ -58,7 +58,7 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
-media/
+
 
 # Flask stuff:
 instance/
@@ -138,4 +138,7 @@ cython_debug/
 photos
 
 #static Folder
- /static/
+
+#Ignore during deployment
+Procfile
+project_dump.json
